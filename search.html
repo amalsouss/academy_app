@@ -1,1 +1,18 @@
+<h2>🔍 البحث عن لاعب</h2>
 
+<form method="POST">
+<input name="name" placeholder="اسم اللاعب">
+<button>بحث</button>
+</form>
+
+<ul>
+{% for r in results %}
+<li>
+👤 {{ r[1] }} |
+💰 {{ r[2] }} درهم |
+📅 {{ r[3] }}
+</li>
+{% endfor %}
+</ul>
+
+<a href="/">⬅️ رجوع</a>
